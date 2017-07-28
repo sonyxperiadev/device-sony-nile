@@ -83,6 +83,7 @@ TARGET_PER_MGR_ENABLED := true
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
 # Treble
+BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Build a separate vendor.img
