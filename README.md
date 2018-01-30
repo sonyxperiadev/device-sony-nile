@@ -1,1 +1,12 @@
-# device-sony-nile
+Copyright (C) Sony Mobile Communications 2018
+=============================================
+
+This is the Android device configuration for nile platform.
+
+nile devices:
+
+    Xperia XA2 ....................... Pioneer
+    Xperia XA2 Ultra ................. Discovery
+
+Build instructions
+https://developer.sony.com/develop/open-devices/guides/aosp-build-instructions/
