@@ -94,6 +94,4 @@ TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
-BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
-
 include device/sony/common/CommonConfig.mk
