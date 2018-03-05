@@ -44,7 +44,7 @@ BOARD_KERNEL_CMDLINE += display_status=on
 #veritykeyid=id:7e4333f9bba00adfe0ede979e28ed1920492b40f
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 androidboot.console=msm_serial_dm,0xc170000
 
-TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/fstab.nile
+TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.nile
 
 TARGET_PD_SERVICE_ENABLED := true
 
