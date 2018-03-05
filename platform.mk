@@ -65,9 +65,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/vendor/etc/rqbalance_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/rqbalance_config.xml
 
-# Platform power configuration
+# Platform specific init
 PRODUCT_PACKAGES += \
-    init.nile.pwr
+    init.nile \
+    init.nile.pwr \
+    ueventd
 
 # Audio
 PRODUCT_PACKAGES += \

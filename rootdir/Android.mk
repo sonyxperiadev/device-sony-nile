@@ -10,23 +10,23 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := init.$(TARGET_DEVICE)
-LOCAL_SRC_FILES := init.nile.rc
+LOCAL_MODULE := init.nile
+LOCAL_SRC_FILES := vendor/etc/init/init.nile.rc
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := init.$(TARGET_DEVICE)
+LOCAL_MODULE_STEM := init.nile
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := init.nile.pwr
-LOCAL_SRC_FILES := init.nile.pwr.rc
+LOCAL_SRC_FILES := vendor/etc/init/init.nile.pwr.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_STEM := init.nile.pwr
 LOCAL_MODULE_SUFFIX := .rc
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
