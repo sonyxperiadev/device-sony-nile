@@ -100,9 +100,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=fluence \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.speaker=true
+    ro.qc.sdk.audio.fluencetype=fluence
 
 # aDSP sensors
 ## max rate
@@ -163,4 +161,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
-
