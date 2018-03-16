@@ -43,4 +43,7 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/oem_[ab]        u:object_r:system_block_device:s0
 /dev/block/bootdevice/by-name/oem_[ab]                         u:object_r:system_block_device:s0
 
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/vendor_[ab]     u:object_r:system_block_device:s0
+/dev/block/bootdevice/by-name/vendor_[ab]                      u:object_r:system_block_device:s0
+
 /dev/block/zram0                                               u:object_r:swap_block_device:s0
