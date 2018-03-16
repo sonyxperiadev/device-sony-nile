@@ -19,8 +19,8 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/ssd             u:object_r:ssd_block_device:s0
 /dev/block/bootdevice/by-name/ssd                              u:object_r:ssd_block_device:s0
 
-/dev/block/platform/soc/c0c4000\.sdhci/by-name/dsp             u:object_r:adsprpcd_block_device:s0
-/dev/block/bootdevice/by-name/dsp                              u:object_r:adsprpcd_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/dsp_[ab]        u:object_r:adsprpcd_block_device:s0
+/dev/block/bootdevice/by-name/dsp_[ab]                         u:object_r:adsprpcd_block_device:s0
 
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/TA              u:object_r:ta_block_device:s0
 /dev/block/bootdevice/by-name/TA                               u:object_r:ta_block_device:s0
@@ -28,8 +28,8 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/userdata        u:object_r:userdata_block_device:s0
 /dev/block/bootdevice/by-name/userdata                         u:object_r:userdata_block_device:s0
 
-/dev/block/platform/soc/c0c4000\.sdhci/by-name/boot            u:object_r:boot_block_device:s0
-/dev/block/bootdevice/by-name/boot                             u:object_r:boot_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/boot_[ab]       u:object_r:boot_block_device:s0
+/dev/block/bootdevice/by-name/boot_[ab]                        u:object_r:boot_block_device:s0
 
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/misc            u:object_r:misc_block_device:s0
 /dev/block/bootdevice/by-name/misc                             u:object_r:misc_block_device:s0
@@ -37,10 +37,10 @@
 /dev/block/platform/soc/c0c4000\.sdhci/by-name/persist         u:object_r:persist_block_device:s0
 /dev/block/bootdevice/by-name/persist                          u:object_r:persist_block_device:s0
 
-/dev/block/platform/soc/c0c4000\.sdhci/by-name/rdimage         u:object_r:ramdump_block_device:s0
-/dev/block/bootdevice/by-name/rdimage                          u:object_r:ramdump_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/rdimage_[ab]    u:object_r:ramdump_block_device:s0
+/dev/block/bootdevice/by-name/rdimage_[ab]                     u:object_r:ramdump_block_device:s0
 
-/dev/block/platform/soc/c0c4000\.sdhci/by-name/oem             u:object_r:system_block_device:s0
-/dev/block/bootdevice/by-name/oem                              u:object_r:system_block_device:s0
+/dev/block/platform/soc/c0c4000\.sdhci/by-name/oem_[ab]        u:object_r:system_block_device:s0
+/dev/block/bootdevice/by-name/oem_[ab]                         u:object_r:system_block_device:s0
 
 /dev/block/zram0                                               u:object_r:swap_block_device:s0
