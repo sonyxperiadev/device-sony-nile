@@ -13,9 +13,11 @@ genfscon sysfs /devices/soc/cce0000.qcom,venus                          u:object
 
 genfscon sysfs /devices/soc/ca0c000.qcom,cci                            u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/soc/ca1c000.qcom,jpeg                           u:object_r:sysfs_camera:s0
+genfscon sysfs /devices/soc/caa0000.qcom,jpeg                           u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/soc/ca00000.qcom,msm-cam                        u:object_r:sysfs_camera:s0
 
 genfscon sysfs /devices/soc/c900000.qcom,mdss_mdp/caps                  u:object_r:sysfs_mdss_mdp_caps:s0
+genfscon sysfs /devices/soc/85e00000.qcom,rmtfs_sharedmem               u:object_r:sysfs_rmtfs:s0
 
 genfscon sysfs /devices/soc/soc:fpc1145                                 u:object_r:sysfs_fingerprint:s0
 
