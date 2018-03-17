@@ -1,6 +1,8 @@
 ###################################
 # Dev block nodes
 #
+/dev/block/mmcblk0rpmb                                         u:object_r:rpmb_block_device:s0
+
 /dev/block/mmcblk0                                             u:object_r:sd_block_device:s0
 /dev/block/mmcblk0p1                                           u:object_r:sd_block_device:s0
 
