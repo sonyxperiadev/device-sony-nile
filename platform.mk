@@ -143,6 +143,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.als_scale=1000 \
     ro.qfusion_use_report_period=false
 
+# Disable UBWC
+PRODUCT_PROPERTY_OVERRIDES += \
+    video.disable.ubwc=1
+
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=a800000.dwc3 \
