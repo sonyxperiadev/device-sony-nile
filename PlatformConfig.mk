@@ -84,9 +84,6 @@ TARGET_PER_MGR_ENABLED := true
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
-# Display
-TARGET_HAS_HDR_DISPLAY := true
-
 # FPC version select
 TARGET_FPC_VERSION := N
 
