@@ -1,4 +1,4 @@
-ifeq (nile,$(PRODUCT_PLATFORM))
+ifeq (nile,$(TARGET_BOOTLOADER_BOARD_NAME))
 
 LOCAL_PATH := $(call my-dir)
 
