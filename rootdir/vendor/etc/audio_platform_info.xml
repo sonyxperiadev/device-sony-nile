@@ -72,7 +72,6 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="101"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/>
         <!-- ACDB IDs below are incorrect -->
-        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="-1"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="-1"/>
     </acdb_ids>
     <backend_names>
