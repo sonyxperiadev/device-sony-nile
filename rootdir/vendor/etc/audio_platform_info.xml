@@ -69,9 +69,9 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" acdb_id="101"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" acdb_id="102"/>
         <!-- ACDB IDs below are incorrect -->
-        <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="255"/>
-        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="255"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="255"/>
+        <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="-1"/>
+        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="-1"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="-1"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="INT0_MI2S_RX"/>
