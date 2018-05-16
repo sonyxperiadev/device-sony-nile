@@ -72,6 +72,7 @@
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="101"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="41"/>
         <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="21"/>
+        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="41"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="INT0_MI2S_RX"/>
