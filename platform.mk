@@ -35,10 +35,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_client \
     update_verifier \
-    bootctrl.sdm660 \
-    brillo_update_payload \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    bootctrl.sdm660
 
 AB_OTA_PARTITIONS += \
     boot \
