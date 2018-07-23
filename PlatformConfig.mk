@@ -44,7 +44,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 androidboot.console=msm_serial_dm,0xc170000
 
 TARGET_RECOVERY_WIPE := $(PLATFORM_COMMON_PATH)/rootdir/recovery.wipe
-TARGET_RECOVERY_FSTAB = $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.nile
+TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.nile
 
 TARGET_PD_SERVICE_ENABLED := true
 
