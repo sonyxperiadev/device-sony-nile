@@ -82,9 +82,6 @@ TARGET_PER_MGR_ENABLED := true
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
-# FPC version select
-TARGET_FPC_VERSION := N
-
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_VENDORIMAGE_PARTITION_SIZE := 891289600
