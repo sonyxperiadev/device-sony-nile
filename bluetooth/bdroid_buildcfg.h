@@ -34,6 +34,10 @@ static inline const char* getBTDefaultName()
         return "Xperia XA2 Ultra";
     }
 
+    if (!strcmp("voyager", device)) {
+        return "Xperia XA2 Plus";
+    }
+
     return "Xperia";
 }
 
