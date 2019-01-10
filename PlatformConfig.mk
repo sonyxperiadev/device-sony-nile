@@ -82,6 +82,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
 
 # Display
 TARGET_USES_GRALLOC1 := true
+TARGET_USES_SDE := true
 
 # Treble
 BOARD_VNDK_VERSION := current
