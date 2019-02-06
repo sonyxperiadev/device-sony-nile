@@ -39,7 +39,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 
 # Serial console
-#BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000
+#BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 restore_msm_uart=0x03004000
 
 TARGET_RECOVERY_WIPE := $(PLATFORM_COMMON_PATH)/rootdir/recovery.wipe
 TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.nile
