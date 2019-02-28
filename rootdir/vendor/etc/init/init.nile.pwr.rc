@@ -136,9 +136,6 @@ on boot
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/decay_rate 100
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/bw_step 50
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/down_thres 80
-    write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/low_power_ceil_mbps 0
-    write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/low_power_io_percent 50
-    write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/low_power_delay 20
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/guard_band_mbps 0
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/up_scale 250
     write /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/idle_mbps 1600
