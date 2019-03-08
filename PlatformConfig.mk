@@ -90,7 +90,6 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
 # Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_SHIPPING_API_LEVEL ?= 26
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
