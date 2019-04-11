@@ -190,6 +190,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     video.disable.ubwc=1
 
+# Display HACK: Use GPU composition only
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.primary_mixer_stages=1
+
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=a800000.dwc3 \
