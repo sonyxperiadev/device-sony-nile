@@ -37,6 +37,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
 
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 restore_msm_uart=0x03004000
