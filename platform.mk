@@ -94,7 +94,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC Configuration
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+    $(SONY_ROOT)/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
 
 # Keylayout
 PRODUCT_COPY_FILES += \
