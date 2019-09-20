@@ -203,7 +203,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB controller setup
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.controller=a800000.dwc3 \
-    sys.usb.rndis.func.name=rndis_bam
+    sys.usb.rndis.func.name=gsi
 
 #WiFi MAC address path
 PRODUCT_PROPERTY_OVERRIDES += \
