@@ -197,7 +197,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Disable UBWC
 PRODUCT_PROPERTY_OVERRIDES += \
-    video.disable.ubwc=1
+    vendor.gralloc.disable_ubwc=1
 
 # Display HACK: Use GPU composition only
 PRODUCT_PROPERTY_OVERRIDES += \
