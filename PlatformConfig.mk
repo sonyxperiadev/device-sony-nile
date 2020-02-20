@@ -75,6 +75,9 @@ WCNSS_FILTER_USES_SIBS := true
 # WiFi and BT MAC address setup
 BOARD_HAS_MIRROR_MACADDRESS := true
 
+# TAD
+TARGET_USES_TAD_V2 := true
+
 # RIL
 TARGET_PER_MGR_ENABLED := true
 
