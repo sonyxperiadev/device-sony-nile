@@ -129,6 +129,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.sdm660
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors_settings \
+    hals.conf
+
 # CAMERA
 PRODUCT_PACKAGES += \
     camera.sdm660
