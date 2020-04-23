@@ -197,7 +197,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Disable UBWC
 PRODUCT_PROPERTY_OVERRIDES += \
-    video.disable.ubwc=1
+    vendor.gralloc.disable_ubwc=1
+
+# SurfaceFlinger
+# Keep in sync with NUM_FRAMEBUFFER_SURFACE_BUFFERS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=2
 
 # Display HACK: Use GPU composition only
 PRODUCT_PROPERTY_OVERRIDES += \
