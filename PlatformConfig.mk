@@ -12,12 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Platform path
-PLATFORM_COMMON_PATH := device/sony/nile
-PRODUCT_PLATFORM_SOD := true
-
-TARGET_BOARD_PLATFORM := sdm660
-
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -44,61 +38,8 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 TARGET_RECOVERY_WIPE := $(PLATFORM_COMMON_PATH)/rootdir/recovery.wipe
 TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.nile
 
-TARGET_PD_SERVICE_ENABLED := true
-
-# Wi-Fi definitions for Qualcomm solution
-WIFI_DRIVER_BUILT := qca_cld3
-WIFI_DRIVER_DEFAULT := qca_cld3
-BOARD_HAS_QCOM_WLAN := true
-BOARD_HOSTAPD_DRIVER := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
-BOARD_WLAN_DEVICE := qcwcn
-BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
-HOSTAPD_VERSION := VER_0_8_X
-WIFI_DRIVER_FW_PATH_AP  := "ap"
-WIFI_DRIVER_FW_PATH_P2P := "p2p"
-WIFI_DRIVER_FW_PATH_STA := "sta"
-WPA_SUPPLICANT_VERSION := VER_0_8_X
-TARGET_USES_ICNSS_QMI := true
-WIFI_DRIVER_STATE_CTRL_PARAM := "/sys/kernel/boot_wlan/boot_wlan"
-WIFI_DRIVER_STATE_OFF := 0
-WIFI_DRIVER_STATE_ON := 1
-
-# BT definitions for Qualcomm solution
-BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_QCOM := true
-TARGET_USE_QTI_BT_STACK := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_COMMON_PATH)/bluetooth
-WCNSS_FILTER_USES_SIBS := true
-
-# WiFi and BT MAC address setup
-BOARD_HAS_MIRROR_MACADDRESS := true
-
-# TAD
-TARGET_USES_TAD_V2 := true
-
-# RIL
-TARGET_PER_MGR_ENABLED := true
-
-# NFC
-NXP_CHIP_FW_TYPE := PN553
-
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy_platform
-
-# Audio
-BOARD_SUPPORTS_SOUND_TRIGGER := true
-
-# DSP
-TARGET_NEEDS_AUDIOPD := true
-
-# Display
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_SDE := true
-TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
-TARGET_USES_DRM_PP := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
