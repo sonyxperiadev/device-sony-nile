@@ -159,6 +159,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.max_mag_rate=false \
     ro.qti.sensors.max_geomag_rotv=50
 
+# Audio - QCOM HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.offload.buffer.size.kb=64
+
 ## sensor type
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sdk.sensors.gestures=false \
