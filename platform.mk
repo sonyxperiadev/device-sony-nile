@@ -69,8 +69,12 @@ PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     $(SONY_ROOT)/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(SONY_ROOT)/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(SONY_ROOT)/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    $(SONY_ROOT)/vendor/etc/common_primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/common_primary_audio_policy_configuration.xml
+    $(SONY_ROOT)/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
+
+# Audio - Separation between plain AOSP configuration and extended CodeAurora Audio HAL features
+AUDIO_HAL_TYPE := $(if $(filter true,$(TARGET_USES_AOSP_AUDIO_HAL)),aosp,caf)
+PRODUCT_COPY_FILES += \
+    $(SONY_ROOT)/vendor/etc/$(AUDIO_HAL_TYPE)_common_primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/common_primary_audio_policy_configuration.xml
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -158,6 +162,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.max_gyro_rate=false \
     ro.qti.sensors.max_mag_rate=false \
     ro.qti.sensors.max_geomag_rotv=50
+
+# Audio - QCOM HAL
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.offload.buffer.size.kb=64
 
 ## sensor type
 PRODUCT_PROPERTY_OVERRIDES += \
