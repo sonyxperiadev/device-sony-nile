@@ -77,7 +77,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := BGRA_8888
 TARGET_USES_DRM_PP := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 
-# VPP
+# Qualcomm VPP (Only relevant to proprietary build)
 TARGET_DISABLE_QTI_VPP := true
 
 # Overlay
