@@ -84,9 +84,6 @@ TARGET_DISABLE_QTI_VPP := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(PLATFORM_COMMON_PATH)/overlay
 
-# Graphics allocator/mapper v3
-TARGET_HARDWARE_GRAPHICS_V3 := true
-
 # A/B support
 AB_OTA_UPDATER := true
 PRODUCT_SHIPPING_API_LEVEL := 26
