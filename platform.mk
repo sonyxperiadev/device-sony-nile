@@ -67,9 +67,6 @@ NXP_CHIP_FW_TYPE := PN553
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
-# DSP
-TARGET_NEEDS_AUDIOPD := true
-
 # Display
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_SDE := true
@@ -171,6 +168,10 @@ PRODUCT_PACKAGES += \
     init.nile \
     init.nile.pwr \
     ueventd
+
+# Audio init
+PRODUCT_PACKAGES += \
+    audiopd.rc
 
 # Audio
 PRODUCT_PACKAGES += \
