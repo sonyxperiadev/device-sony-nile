@@ -187,7 +187,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.sdm660
 
-# Sensors
+# Legacy Sensors
+DEVICE_MANIFEST_FILE += $(PLATFORM_COMMON_PATH)/vintf/android.hardware.sensors@1-0.xml
+
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
