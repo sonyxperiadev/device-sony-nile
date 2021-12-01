@@ -167,6 +167,11 @@ PRODUCT_PACKAGES += \
     init.nile.pwr \
     ueventd
 
+# modemswitcher
+PRODUCT_PACKAGES += \
+    vendor.somc.hardware.modemswitcher@1.0-service.rc \
+    init.sony-modem-switcher.rc
+
 # Audio init
 PRODUCT_PACKAGES += \
     audiopd.rc
