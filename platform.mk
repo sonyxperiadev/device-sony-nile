@@ -189,6 +189,15 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm660 \
     memtrack.sdm660
 
+# Keymaster 3 passthrough service
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-service
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.keymaster.version=v3
+
+DEVICE_MANIFEST_FILE += $(PLATFORM_COMMON_PATH)/vintf/android.hw.keymaster_v3.xml
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.sdm660
